@@ -945,7 +945,6 @@ hr {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     margin-top: -5px;
-    cursor: pointer;
     user-select: none;
 }
 
@@ -961,6 +960,7 @@ hr {
 .profile-row {
     display: flex;
     align-items: flex-start;
+    user-select: none;
 }
 
 .profile-detail-image {
@@ -977,13 +977,14 @@ hr {
     font-size: 27px;
     font-weight: 700;
     color: var(--primary-text-color);
+    user-select: text;
 }
 
 .profile-row div p {
     font-size: 14px;
     font-weight: 500;
+    user-select: text;
 }
-
 
 .profile-row div img {
     width: 35px;
@@ -991,11 +992,13 @@ hr {
     margin-top: 12px;
     border: 1px solid;
     border-color: var(--white);
-    user-select: none;
 }
 
 .other-img {
     margin-left: -10px;
+}
+
+.profile-right {
     user-select: none;
 }
 
@@ -1013,7 +1016,6 @@ hr {
     font-weight: 500;
     margin-top: 69px;
     transition: background .3s;
-    user-select: none;
 }
 
 .add-story-btn i,
@@ -1070,7 +1072,6 @@ hr {
     font-size: 15px;
     transition: background .3s;
     color: var(--primary-text-color);
-    user-select: none;
 }
 
 .bottom-buttons-menu button i {
