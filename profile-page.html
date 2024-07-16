@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connectify | Profile</title>
+
+    <link rel="icon" href="media/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+        body {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="media/logo3.png" alt="Logo" class="logo">
+            </a>
+            
+            <div class="search-box">
+                <i class='bx bx-search' style='color:#606266'></i>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <ul>
+                <li> <a href="index.html"><i class='bx bx-home' style='color:#fff' ></i></a></li>
+                <li><i class='bx bx-group' style='color:#fff' ></i></li>
+                <li><i class='bx bx-store-alt' style='color:#fff' ></i></li>
+                <li><i class='bx bx-envelope' style='color:#fff' ></i></li>
+                <li><i class='bx bx-video' style='color:#fff'></i></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <i class='bx bxs-dashboard' style='color:#050505' ></i>
+            <i class='bx bxl-messenger' style='color:#050505' ></i>
+
+            <div class="notify">
+                <i class='bx bxs-bell' style='color:#050505' ></i>
+            </div>
+            <div class="nav-user-icon online" onclick="toggleSettingsMenu()">
+                <img src="media/profile-pic.png" alt="Profile Picture">
+            </div>
+        </div>
+
+        <div class="settings-menu">
+
+            <div class="menu-item">
+                <i class='bx bxs-cog left-icon' style='color:#1c1d21'  ></i>
+                <span>Settings & privacy</span>
+                <i class='bx bx-chevron-right right-icon' style='color:#5C636B' ></i>
+            </div>
+
+            <div class="menu-item">
+                <i class='bx bxs-help-circle left-icon' style='color:#1c1d21' ></i>
+                <span>Help & support</span>
+                <i class='bx bx-chevron-right right-icon' style='color:#5C636B' ></i>
+            </div>
+            
+            <div class="menu-item">
+                <i class='bx bxs-moon left-icon' style='color:#1c1d21' ></i>
+                <span>Display & accessibility</span>
+                <i class='bx bx-chevron-right right-icon' style='color:#5C636B' ></i>
+            </div>
+            
+            <div class="menu-item">
+                <i class='bx bxs-message-error left-icon' style='color:#1c1d21' ></i>
+                <span>Give Feedback</span>
+            </div>
+            
+            <div class="menu-item">
+                <i class='bx bxs-log-in left-icon' style='color:#1c1d21' ></i>
+                <span>Logout</span>
+            </div>
+
+        </div>
+
+        <div class="settings-menu-2">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-profile">
+                <div>
+                    <img src="media/profile-pic.png" alt="">
+                    <span>Muhammad Tehmish</span>
+                </div>
+                <hr>
+                <a href="profile-page.html">See profile</a>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="profile-container">
+        <img src="media/cover.png" alt="" class="cover-img">
+
+        <div class="profile-details">
+            <div class="profile-left">
+                <div class="profile-row">
+                    <img src="media/profile.png" alt="" class="profile-detail-image">
+                    <div>
+                        <h3>Muhammad Tehmish</h3>
+                        <p>38 friends</p>
+                        <img src="media/member-1.png" alt="">
+                        <img src="media/member-2.png" alt="" class="other-img">
+                        <img src="media/member-3.png" alt="" class="other-img">
+                        <img src="media/member-4.png" alt="" class="other-img">
+                        <img src="media/member-5.png" alt="" class="other-img">
+                        <img src="media/member-6.png" alt="" class="other-img">
+                        <img src="media/member-7.png" alt="" class="other-img">
+                        <img src="media/member-8.png" alt="" class="other-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-right">
+
+                <button class="add-story-btn"><i class='bx bx-plus'></i> Add a Story</button>
+                <button class="edit-profile-btn"><i class='bx bxs-pencil'></i> Edit Profile</button>
+                <button class="up-icon-btn"><i class='bx bx-chevron-up bx-rotate-180'></i></i></button>
+
+            </div>
+
+        </div>
+
+        <div class="bottom-buttons-menu">
+            <button>Posts</button>
+            <button>About</button>
+            <button>Friends</button>
+            <button>Photos</button>
+            <button>Videos</button>
+            <button>Check-ins</button>
+            <button>More <i class='bx bxs-down-arrow'></i></button>
+            <button class="profile-menu-dots"> <i class='bx bx-dots-horizontal-rounded'></i> </button>
+        </div>
+
+    </div>
+
+    
+    <div class="profile-info">
+
+        <div class="info-col">
+
+            <div class="profile-intro">
+                <h3>Intro</h3>
+                <p class="intro-text">The only way to achieve the impossible is to believe it is possible.</p>
+                <hr>
+
+                <ul>
+                    <li><i class='bx bxs-briefcase'></i> Software Developer at <strong>Microsoft</strong></li>
+                    <li><i class='bx bxs-graduation'></i>Studied at <strong>Oxford University</strong></li>
+                    <li><i class='bx bxs-graduation'></i> Went to <strong>Stanford University</strong></li>
+                    <li><i class='bx bxs-home'></i> Lives in <strong>Karachi, Pakistan</strong></li>
+                    <li><i class='bx bxs-location-plus'></i> From <strong>Karachi, Pakistan</strong></li>
+                </ul>
+            </div>
+
+            <div class="profile-intro">
+                <div class="title-box">
+                    <h3>Photos</h3>
+                    <a href="#">See all photos</a>
+                </div>
+
+                <div class="photo-box">
+                    <div><img src="media/photo1.png" alt=""></div>
+                    <div><img src="media/photo2.png" alt=""></div>
+                    <div><img src="media/photo3.png" alt=""></div>
+                    <div><img src="media/photo4.png" alt=""></div>
+                    <div><img src="media/photo5.png" alt=""></div>
+                    <div><img src="media/photo6.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="profile-intro">
+                <div class="title-box">
+                    <h3>Friends</h3>
+                    <a href="#">See all friends</a>
+                </div>
+                <p>38 friends</p>
+
+                <div class="friends-box">
+                    <div><img src="media/member-1.png" alt=""> <p>Amelia Lee</p></div>
+                    <div><img src="media/member-2.png" alt=""> <p>J Robinson</p></div>
+                    <div><img src="media/member-3.png" alt=""> <p>Emma Carter</p></div>
+                    <div><img src="media/member-4.png" alt=""> <p>Ben Clark</p></div>
+                    <div><img src="media/member-5.png" alt=""> <p>Harper Lewis</p></div>
+                    <div><img src="media/member-6.png" alt=""> <p>Charlotte Hall</p></div>
+                    <div><img src="media/member-7.png" alt=""> <p>Alex Young</p></div>
+                    <div><img src="media/member-8.png" alt=""> <p>Grace King</p></div>
+                    <div><img src="media/member-9.png" alt=""> <p>Lucas Walker</p></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="post-col">
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="media/profile-pic.png" alt="">
+                    <div class="profile-box">
+                        <textarea rows="1" placeholder="What's on your mind, Muhammad?"></textarea>
+                    </div>
+                </div>
+
+                
+                <div class="post-input-container">
+                    <div class="add-post-links">
+                        <a href="#"><i class='bx bxs-video-plus' style='color:#e42645'></i> Live Video</a>
+                        <a href="#"><i class='bx bx-photo-album' style='color:#41b35d'></i> Photo/video</a>
+                        <a href="#"><i class='bx bx-happy-alt' style='color:#eab026'></i> Feeling/activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------- POST 1 ----------------------->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-post-profile">
+                        <img src="media/profile-pic.png" alt="">
+                        <div>
+                            <p>Muhammad Tehmish</p>
+                            <span>June 12 2024, 11:00am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class='bx bx-dots-horizontal-rounded bx-flip-horizontal' style='color:#606770' ></i></a>
+                </div>
+
+                <p class="post-text">Exploring the hidden gems of Pakistan! 🏞️✨ Soaking in the breathtaking views and making unforgettable memories. <a href="#"> #TravelDiaries</a> <a href="#">#AdventureAwaits"</a></p>
+
+                <img src="media/feed-image-2.jpg" alt="" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="post-like-button"><i class='bx bxs-like' style='color:#0866ff' ></i>175</div>
+                        <div class="post-comment-button"><i class='bx bxs-message-rounded bx-flip-horizontal' style='color:#606770'  ></i>30</div>
+                        <div class="post-share-button"><i class='bx bxs-share bx-flip-horizontal' style='color:#606770' ></i>11</div>
+                    </div>
+                </div>
+
+                <div class="post-row-below">
+                    <div class="post-profile-icons">
+                        <div><i class='bx bx-like' ></i>Like</div>
+                        <div><i class='bx bx-message-rounded bx-flip-horizontal' ></i>Comment</div>
+                        <div><i class='bx bxl-whatsapp' ></i>Send</div>
+                        <div><i class='bx bx-share bx-flip-horizontal' ></i>Share</div>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------- POST 2 ----------------------->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-post-profile">
+                        <img src="media/profile-pic.png" alt="">
+                        <div>
+                            <p>Muhammad Tehmish</p>
+                            <span>November 15 2023, 12:30am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class='bx bx-dots-horizontal-rounded bx-flip-horizontal' style='color:#606770' ></i></a>
+                </div>
+
+                <p class="post-text">🚀✨ Hubble Measures the Distance to a Supernova. <a href="#">#NASA</a> <a href="#">#Space</a> <a href="#">#HubbleTelescope</a></p>
+
+                <img src="media/feed-image-1.jpg" alt="" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="post-like-button"><i class='bx bxs-like' style='color:#0866ff' ></i>750</div>
+                        <div class="post-comment-button"><i class='bx bxs-message-rounded bx-flip-horizontal'  ></i>50</div>
+                        <div class="post-share-button"><i class='bx bxs-share bx-flip-horizontal' style='color:#606770' ></i>21</div>
+                    </div>
+                </div>
+
+                <div class="post-row-below">
+                    <div class="post-profile-icons">
+                        <div><i class='bx bx-like' ></i>Like</div>
+                        <div><i class='bx bx-message-rounded bx-flip-horizontal' ></i>Comment</div>
+                        <div><i class='bx bxl-whatsapp' ></i>Send</div>
+                        <div><i class='bx bx-share bx-flip-horizontal' ></i>Share</div>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------- POST 3 ----------------------->
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-post-profile">
+                        <img src="media/profile-pic.png" alt="">
+                        <div>
+                            <p>Muhammad Tehmish</p>
+                            <span>December 12 2022, 3:00pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class='bx bx-dots-horizontal-rounded bx-flip-horizontal' style='color:#606770' ></i></a>
+                </div>
+
+                <p class="post-text">Just had the most delicious meal at The Rustic Table! 🍽️🍷 Highly recommend their Truffle Mushroom Risotto. Have you tried it? <a href="#">#Foodie</a> <a href="#">#Yum</a></p>
+
+                <img src="media/feed-image-4.jpg" alt="" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="post-like-button"><i class='bx bxs-like' style='color:#0866ff' ></i>5.7k</div>
+                        <div class="post-comment-button"><i class='bx bxs-message-rounded bx-flip-horizontal' style='color:#606770'  ></i>150</div>
+                        <div class="post-share-button"><i class='bx bxs-share bx-flip-horizontal' style='color:#606770' ></i>45</div>
+                    </div>
+                </div>
+
+                <div class="post-row-below">
+                    <div class="post-profile-icons">
+                        <div><i class='bx bx-like' ></i>Like</div>
+                        <div><i class='bx bx-message-rounded bx-flip-horizontal' ></i>Comment</div>
+                        <div><i class='bx bxl-whatsapp' ></i>Send</div>
+                        <div><i class='bx bx-share bx-flip-horizontal' ></i>Share</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    
+    <div class="footer">
+        <p>Copyright &copy; 2024 - Muhammad Tehmish</p>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

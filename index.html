@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connectify | Home</title>
+
+    <link rel="icon" href="media/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="media/logo3.png" alt="Logo" class="logo">
+            </a>
+
+            <div class="search-box">
+                <i class='bx bx-search' style='color:#606266'></i>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <ul>
+                <li> <a href="index.html"><i class='bx bx-home' style='color:#fff' ></i></a></li>
+                <li><i class='bx bx-group' style='color:#fff' ></i></li>
+                <li><i class='bx bx-store-alt' style='color:#fff' ></i></li>
+                <li><i class='bx bx-envelope' style='color:#fff' ></i></li>
+                <li><i class='bx bx-video' style='color:#fff'></i></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <i class='bx bxs-dashboard' style='color:#050505' ></i>
+            <i class='bx bxl-messenger' style='color:#050505' ></i>
+
+            <div class="notify">
+                <i class='bx bxs-bell' style='color:#050505' ></i>
+            </div>
+            <div class="nav-user-icon online" onclick="toggleSettingsMenu()">
+                <img src="media/profile-pic.png" alt="Profile Picture">
+            </div>
+        </div>
+
+        <div class="settings-menu">
+
+            <div class="menu-item">
+                <i class='bx bxs-cog left-icon' style='color:#1c1d21'  ></i>
+                <span>Settings & privacy</span>
+                <i class='bx bx-chevron-right right-icon' style='color:#5C636B' ></i>
+            </div>
+
+            <div class="menu-item">
+                <i class='bx bxs-help-circle left-icon' style='color:#1c1d21' ></i>
+                <span>Help & support</span>
+                <i class='bx bx-chevron-right right-icon' style='color:#5C636B' ></i>
+            </div>
+            
+            <div class="menu-item">
+                <i class='bx bxs-moon left-icon' style='color:#1c1d21' ></i>
+                <span>Display & accessibility</span>
+                <i class='bx bx-chevron-right right-icon' style='color:#5C636B' ></i>
+            </div>
+            
+            <div class="menu-item">
+                <i class='bx bxs-message-error left-icon' style='color:#1c1d21' ></i>
+                <span>Give Feedback</span>
+            </div>
+            
+            <div class="menu-item">
+                <i class='bx bxs-log-in left-icon' style='color:#1c1d21' ></i>
+                <span>Logout</span>
+            </div>
+
+        </div>
+
+        <div class="settings-menu-2">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-profile">
+                <div>
+                    <img src="media/profile-pic.png" alt="">
+                    <span>Muhammad Tehmish</span>
+                </div>
+                <hr>
+                <a href="profile-page.html">See profile</a>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="profile-page.html"><img src="media/profile-pic.png" alt=""> Muhammad Tehmish</a>
+                <a href="#"><i class='bx bx-news' ></i> Latest News</a>
+                <a href="#"><i class='bx bx-time-five' ></i> Memories</a>
+                <a href="#"><i class='bx bxs-bookmark-star' ></i> Saved</a>
+                <a href="#"><i class='bx bxs-videos' ></i> Video</a>
+                <a href="#"><i class='bx bx-chevron-down see-more' style='color:#000'></i> See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="media/8-ball.png" alt=""> 8 Ball Pool</a>
+                <a href="#"><img src="media/angry.png" alt=""> Angry Birds</a>
+                <a href="#"><img src="media/shortcut-1.png" alt=""> Web Development</a>
+                <a href="#"><img src="media/shortcut-4.png" alt=""> Short Courses</a>
+                <br>
+            </div>
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="media/upload.png" alt="">
+                    <p>Create Story</p>
+                </div>
+
+                <div class="other-story story2">
+                    <img src="media/group-1.png" alt="">
+                    <p>Ferrari</p>
+                </div>
+
+                <div class="other-story story3">
+                    <img src="media/group-2.png" alt="">
+                    <p>ICC - International Cricket Council</p>
+                </div>
+
+            </div>
+
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="media/profile-pic.png" alt="">
+                    <div class="profile-box">
+                        <textarea rows="1" placeholder="What's on your mind, Muhammad?"></textarea>
+                    </div>
+                </div>
+
+                
+                <div class="post-input-container">
+                    <div class="add-post-links">
+                        <a href="#"><i class='bx bxs-video-plus' style='color:#e42645'></i> Live Video</a>
+                        <a href="#"><i class='bx bx-photo-album' style='color:#41b35d'></i> Photo/video</a>
+                        <a href="#"><i class='bx bx-happy-alt' style='color:#eab026'></i> Feeling/activity</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!----------------------- POST 1 ----------------------->
+
+            <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-post-profile">
+                            <img src="media/profile-pic.png" alt="">
+                            <div>
+                                <p>Muhammad Tehmish</p>
+                                <span>June 12 2024, 11:00am</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class='bx bx-dots-horizontal-rounded bx-flip-horizontal' style='color:#606770' ></i></a>
+                    </div>
+
+                    <p class="post-text">Exploring the hidden gems of Pakistan! 🏞️✨ Soaking in the breathtaking views and making unforgettable memories. <a href="#"> #TravelDiaries</a> <a href="#">#AdventureAwaits"</a></p>
+
+                    <img src="media/feed-image-2.jpg" alt="" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div class="post-like-button"><i class='bx bxs-like' style='color:#0866ff' ></i>175</div>
+                            <div class="post-comment-button"><i class='bx bxs-message-rounded bx-flip-horizontal' style='color:#606770'  ></i>30</div>
+                            <div class="post-share-button"><i class='bx bxs-share bx-flip-horizontal' style='color:#606770' ></i>11</div>
+                        </div>
+                    </div>
+
+                    <div class="post-row-below">
+                        <div class="post-profile-icons">
+                            <div><i class='bx bx-like' ></i>Like</div>
+                            <div><i class='bx bx-message-rounded bx-flip-horizontal' ></i>Comment</div>
+                            <div><i class='bx bxl-whatsapp' ></i>Send</div>
+                            <div><i class='bx bx-share bx-flip-horizontal' ></i>Share</div>
+                        </div>
+                    </div>
+            </div>
+
+            <!----------------------- POST 2 ----------------------->
+
+            <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-post-profile">
+                            <img src="media/profile-pic.png" alt="">
+                            <div>
+                                <p>Muhammad Tehmish</p>
+                                <span>November 15 2023, 12:30am</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class='bx bx-dots-horizontal-rounded bx-flip-horizontal' style='color:#606770' ></i></a>
+                    </div>
+
+                    <p class="post-text">🚀✨ Hubble Measures the Distance to a Supernova. <a href="#">#NASA</a> <a href="#">#Space</a> <a href="#">#HubbleTelescope</a></p>
+
+                    <img src="media/feed-image-1.jpg" alt="" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div class="post-like-button"><i class='bx bxs-like' style='color:#0866ff' ></i>750</div>
+                            <div class="post-comment-button"><i class='bx bxs-message-rounded bx-flip-horizontal'  ></i>50</div>
+                            <div class="post-share-button"><i class='bx bxs-share bx-flip-horizontal' style='color:#606770' ></i>21</div>
+                        </div>
+                    </div>
+
+                    <div class="post-row-below">
+                        <div class="post-profile-icons">
+                            <div><i class='bx bx-like' ></i>Like</div>
+                            <div><i class='bx bx-message-rounded bx-flip-horizontal' ></i>Comment</div>
+                            <div><i class='bx bxl-whatsapp' ></i>Send</div>
+                            <div><i class='bx bx-share bx-flip-horizontal' ></i>Share</div>
+                        </div>
+                    </div>
+            </div>
+
+            <!----------------------- POST 3 ----------------------->
+
+            <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-post-profile">
+                            <img src="media/profile-pic.png" alt="">
+                            <div>
+                                <p>Muhammad Tehmish</p>
+                                <span>December 12 2022, 3:00pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class='bx bx-dots-horizontal-rounded bx-flip-horizontal' style='color:#606770' ></i></a>
+                    </div>
+
+                    <p class="post-text">Just had the most delicious meal at The Rustic Table! 🍽️🍷 Highly recommend their Truffle Mushroom Risotto. Have you tried it? <a href="#">#Foodie</a> <a href="#">#Yum</a></p>
+
+                    <img src="media/feed-image-4.jpg" alt="" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div class="post-like-button"><i class='bx bxs-like' style='color:#0866ff' ></i>5.7k</div>
+                            <div class="post-comment-button"><i class='bx bxs-message-rounded bx-flip-horizontal' style='color:#606770'  ></i>150</div>
+                            <div class="post-share-button"><i class='bx bxs-share bx-flip-horizontal' style='color:#606770' ></i>45</div>
+                        </div>
+                    </div>
+
+                    <div class="post-row-below">
+                        <div class="post-profile-icons">
+                            <div><i class='bx bx-like' ></i>Like</div>
+                            <div><i class='bx bx-message-rounded bx-flip-horizontal' ></i>Comment</div>
+                            <div><i class='bx bxl-whatsapp' ></i>Send</div>
+                            <div><i class='bx bx-share bx-flip-horizontal' ></i>Share</div>
+                        </div>
+                    </div>
+            </div>
+
+            <!----------------------- POST 4 ----------------------->
+                
+            <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-post-profile">
+                            <img src="media/member-3.png" alt="">
+                            <div>
+                                <p>Emma Carter</p>
+                                <span>3 days ago <strong>·</strong></span>
+                            </div>
+                        </div>
+                        <a href="#"><i class='bx bx-dots-horizontal-rounded bx-flip-horizontal' style='color:#606770' ></i></a>
+                    </div>
+
+                    <p class="post-text">Just finished reading "The Psychology of Money" by Morgan Housel, and it was an absolute page-turner! 📚 Anyone else read it? What did you think?   <a href="#">#BookLovers</a> <a href="#">#ReadingJourney</a></p>
+
+                    <img src="media/feed-image-5.jpg" alt="" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div class="post-like-button"><i class='bx bxs-like' style='color:#0866ff' ></i>3.2k</div>
+                            <div class="post-comment-button"><i class='bx bxs-message-rounded bx-flip-horizontal' style='color:#606770'  ></i>75</div>
+                            <div class="post-share-button"><i class='bx bxs-share bx-flip-horizontal' style='color:#606770' ></i>30</div>
+                        </div>
+                    </div>
+
+                    <div class="post-row-below">
+                        <div class="post-profile-icons">
+                            <div><i class='bx bx-like' ></i>Like</div>
+                            <div><i class='bx bx-message-rounded bx-flip-horizontal' ></i>Comment</div>
+                            <div><i class='bx bxl-whatsapp' ></i>Send</div>
+                            <div><i class='bx bx-share bx-flip-horizontal' ></i>Share</div>
+                        </div>
+                    </div>
+                </div>
+
+            <!----------------------- POST 5 ----------------------->
+
+            <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-post-profile">
+                            <img src="media/profile-pic.png" alt="">
+                            <div>
+                                <p>Ben Clark</p>
+                                <span>January 25 2023, 7:30am</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class='bx bx-dots-horizontal-rounded bx-flip-horizontal' style='color:#606770' ></i></a>
+                    </div>
+
+                    <p class="post-text">Completed my first 5k run today! 🏃‍♂️💪 Feeling accomplished and ready for more. Who’s up for a running challenge? <a href="#">#FitnessGoals</a> <a href="#">#HealthyLifestyle</a></p>
+
+                    <img src="media/feed-image-3.jpg" alt="" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div class="post-like-button"><i class='bx bxs-like' style='color:#0866ff' ></i>127</div>
+                            <div class="post-comment-button"><i class='bx bxs-message-rounded bx-flip-horizontal' style='color:#606770'  ></i>30</div>
+                            <div class="post-share-button"><i class='bx bxs-share bx-flip-horizontal' style='color:#606770' ></i>15</div>
+                        </div>
+                    </div>
+
+                    <div class="post-row-below">
+                        <div class="post-profile-icons">
+                            <div><i class='bx bx-like' ></i>Like</div>
+                            <div><i class='bx bx-message-rounded bx-flip-horizontal' ></i>Comment</div>
+                            <div><i class='bx bxl-whatsapp' ></i>Send</div>
+                            <div><i class='bx bx-share bx-flip-horizontal' ></i>Share</div>
+                        </div>
+                    </div>
+            </div>
+
+
+            <button class="load-more-btn">Load More</button>
+
+            <div class="footer">
+                <p>Copyright &copy; 2024 - Muhammad Tehmish</p>
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDEBAR -->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>11</h3>
+                    <span>February</span>
+                </div>
+                <div class="right-event">
+                    <h4>Tech Summit</h4>
+                    <p><i class='bx bxs-map'></i>Times Square</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>25</h3>
+                    <span>July</span>
+                </div>
+                <div class="right-event">
+                    <h4>Quiz Competition</h4>
+                    <p><i class='bx bxs-map'></i>IBA Main Campus</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            
+            <a class="sidebar-link" href="#">See All</a>
+
+            <div class="sidebar-title">
+                <h4>Sponsored</h4>
+            </div>
+
+            <img src="media/advertisement-1.jpg" class="sidebar-ads" alt="">
+
+            <div class="sidebar-title contacts">
+                <h4>Contacts</h4>
+                <p class="contact-icon"><i class='bx bx-search' style='color:#66686C'></i></p>
+                <p><i class='bx bx-dots-horizontal-rounded'></i></p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="media/member-1.png" alt="">
+                </div>
+                <p>Amelia Lee</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="media/member-2.png" alt="">
+                </div>
+                <p>Ben Clark</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="media/member-3.png" alt="">
+                </div>
+                <p>Emma Carter</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="media/member-4.png" alt="">
+                </div>
+                <p>Harper Lewis</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="media/member-5.png" alt="">
+                </div>
+                <p>Alex Young</p>
+            </div>
+            <br>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
