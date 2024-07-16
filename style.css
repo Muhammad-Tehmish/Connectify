@@ -945,6 +945,8 @@ hr {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     margin-top: -5px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .profile-details {
@@ -968,6 +970,7 @@ hr {
     margin-top: -15%;
     border: 5px solid;
     border-color: var(--white);
+    user-select: none;
 }
 
 .profile-row div h3 {
@@ -988,10 +991,12 @@ hr {
     margin-top: 12px;
     border: 1px solid;
     border-color: var(--white);
+    user-select: none;
 }
 
 .other-img {
     margin-left: -10px;
+    user-select: none;
 }
 
 .add-story-btn,
@@ -1008,6 +1013,7 @@ hr {
     font-weight: 500;
     margin-top: 69px;
     transition: background .3s;
+    user-select: none;
 }
 
 .add-story-btn i,
@@ -1047,6 +1053,7 @@ hr {
     padding-top: 10px;
     border-top: 1px solid #ccc;
     position: relative;
+    user-select: none;
 }
 
 .bottom-buttons-menu button {
@@ -1063,6 +1070,7 @@ hr {
     font-size: 15px;
     transition: background .3s;
     color: var(--primary-text-color);
+    user-select: none;
 }
 
 .bottom-buttons-menu button i {
@@ -1173,6 +1181,7 @@ hr {
     grid-template-columns: repeat(3, auto);
     grid-gap: 10px;
     margin-top: 15px;
+    user-select: none;
 }
 
 .photo-box img, .friends-box img {
